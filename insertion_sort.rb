@@ -4,7 +4,7 @@ def insertionSort(ar, unsorted_index)
 
   i = ar[0, unsorted_index + 1].length - 2
   e = ar[0, unsorted_index + 1][-1]
-  while ar[i] >= e && i >= 0
+  while ar[i] > e && i >= 0
     ar[i + 1] = ar[i]
     puts ar.join(' ')
     i -= 1
